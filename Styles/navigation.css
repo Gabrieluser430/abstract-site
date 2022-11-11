@@ -1,0 +1,136 @@
+body {
+   margin: 0px;
+   font-family: Arial;
+   height: 100%
+}
+
+.nav-container {
+   background-color: black;
+   height: 60px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.start-buttons {
+  height: 100%;
+  color: #ffff;
+  margin-left: 65px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-button {
+   display: flex;
+   height: 25px;
+   width: 80px;
+   align-items: center;
+   justify-content: center;
+   transition: opacity 0.15s;
+}
+
+.logo-button:hover {
+cursor: pointer;
+opacity: 0.8;
+}
+
+.end-buttons {
+   margin-right: 65px;
+}
+
+.abstract-anchor {
+   background-color: black;
+   color: white;
+   font-size: 15px;
+   font-weight: 500;
+   margin-right: 0px;
+}
+
+.help-button {
+   background-color: black;
+   color: white;
+   font-size: 16px;
+   font-weight: 500;
+   border-left-width: 1px;
+   border-left-color: white;
+   border-style: solid;
+   transition: text-decoration 1s;
+   margin-left: 10px;
+   padding-left: 10px;
+}
+
+.help-button:hover {
+   text-decoration: underline;
+   text-decoration-color: white;
+   cursor: pointer;
+}
+
+.nav-img {
+   filter: invert(100%) sepia(5%) saturate(0%) hue-rotate(4deg) brightness(104%) contrast(108%);
+}
+
+.submit-button {
+   width: 157px;
+   height: 34px;
+   margin-right: 7px;
+   border-radius: 6px;
+   border-style: solid;
+   border-color: #ffff;
+   border-width: 1px;
+   background-color: black;
+   color: #ffff;
+   font-size: 16px;
+}
+
+.submit-button:hover {
+   cursor: pointer;
+}
+
+.sign-button {
+width: 100px;
+height: 38px;
+border-radius: 8px;
+border-style: solid;
+background-color:#4C5FD5;
+color: white;
+font-size: 16px;
+transition: background-color 0.3s;
+
+}
+
+.sign-button:hover {
+   cursor: pointer;
+   background-color: white;
+   color: black;
+}
+
+.toggle-button {
+   position: absolute;
+   top: 25px;
+   right: 68px;
+   display: none;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 17px;
+   height: 12px;
+}
+
+.toggle-button .bar {
+   height: 2px;
+   width: 100%;
+   background-color: white;
+   border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+   .toggle-button {
+      display: flex;
+   }
+
+   .end-buttons {
+      display: none;
+   }
+
+   
+}
