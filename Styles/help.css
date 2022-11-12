@@ -1,15 +1,16 @@
 .div-container {
-  height: 650px;
+  height: 960px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .help-flex-container {
-  margin-top: 100px;
-  height: 300px;
-  width: 990px;
+  margin-top: 90px;
+  height: 513px;
+  width: 950px;
   display: flex;
+  justify-content: center;
 }
 
 .help-grid-container {
@@ -22,44 +23,51 @@
 .div-a {
   height: 50%;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 21px;
 }
 
 .help-image-container {
-width: 70px;
-height: 150px;
-display: flex;
-justify-content: center;
-align-items: flex-start;
-}
-
-.help-description-container {
-width: 425px;
-height: 150px;
-}
-
-.help-image {
-  width: 65px;
-  height: 65px;
-  margin-top: 17px;
+  width: 70px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   margin-right: 20px;
 }
 
+.help-description-container {
+  width: 625px;
+  height: 150px;
+}
+
+.help-image {
+  width: 95px;
+  height: 95px;
+  margin-top: 24px;
+  margin-right: 30px;
+}
+
 .help-title {
+  font-size: 24px;
   margin-left: 7px;
-  margin-top: 17px;
+  margin-top: 26px;
+  margin-bottom: 16px;
 }
 
 .help-description {
   margin-left: 7px;
-  margin-top: -10px;
-  margin-bottom: 10px;
-  line-height: 21px;
-  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 23px;
+  line-height: 33px;
+  font-size: 24px;
 }
 
 .help-anchor {
   margin-left: 7px;
-  font-size: 13px;
+  font-size: 20px;
   text-decoration: none;
   color: #4C5FD5;
 }
@@ -71,10 +79,9 @@ height: 150px;
 }
 
 .help-new-container {
+  margin-top: 60px;
+  height: 256px;
+  width: 950px;
   display: flex;
-  flex-direction: row;
-  width: 100px;
-  height: 100px;
-  margin-top: 50px;
-  margin-right: 889px;
+  justify-content: center;
 }

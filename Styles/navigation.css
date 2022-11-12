@@ -6,25 +6,26 @@ body {
 
 .nav-container {
    background-color: black;
-   height: 60px;
+   height: 88px;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
+   position: relative;
 }
 
 .start-buttons {
   height: 100%;
   color: #ffff;
-  margin-left: 65px;
+  margin-left: 105px;
   display: flex;
   align-items: center;
 }
 
 .logo-button {
    display: flex;
-   height: 25px;
-   width: 80px;
+   height: 33px;
+   width: 150px;
    align-items: center;
    justify-content: center;
    transition: opacity 0.15s;
@@ -36,13 +37,13 @@ opacity: 0.8;
 }
 
 .end-buttons {
-   margin-right: 65px;
+   margin-right: 120px;
 }
 
 .abstract-anchor {
    background-color: black;
    color: white;
-   font-size: 15px;
+   font-size: 25px;
    font-weight: 500;
    margin-right: 0px;
 }
@@ -50,7 +51,7 @@ opacity: 0.8;
 .help-button {
    background-color: black;
    color: white;
-   font-size: 16px;
+   font-size: 25px;
    font-weight: 500;
    border-left-width: 1px;
    border-left-color: white;
@@ -68,19 +69,21 @@ opacity: 0.8;
 
 .nav-img {
    filter: invert(100%) sepia(5%) saturate(0%) hue-rotate(4deg) brightness(104%) contrast(108%);
+   height: 50px;
+   width: 50px;
 }
 
 .submit-button {
-   width: 157px;
-   height: 34px;
+   width: 232px;
+   height: 50px;
    margin-right: 7px;
-   border-radius: 6px;
+   border-radius: 8px;
    border-style: solid;
    border-color: #ffff;
    border-width: 1px;
-   background-color: black;
+   background-color: #191a1b;
    color: #ffff;
-   font-size: 16px;
+   font-size: 25px;
 }
 
 .submit-button:hover {
@@ -88,15 +91,15 @@ opacity: 0.8;
 }
 
 .sign-button {
-width: 100px;
-height: 38px;
-border-radius: 8px;
-border-style: solid;
-background-color:#4C5FD5;
-color: white;
-font-size: 16px;
-transition: background-color 0.3s;
-
+   margin-left: 3px;
+   width: 145px;
+   height: 54px;
+   border-radius: 10px;
+   border-style: solid;
+   background-color:#4C5FD5;
+   color: white;
+   font-size: 25px;
+   transition: background-color 0.3s;
 }
 
 .sign-button:hover {
@@ -107,13 +110,13 @@ transition: background-color 0.3s;
 
 .toggle-button {
    position: absolute;
-   top: 25px;
-   right: 68px;
+   top: 36px;
+   right: 77px;
    display: none;
    flex-direction: column;
    justify-content: space-between;
-   width: 17px;
-   height: 12px;
+   width: 23px;
+   height: 15px;
 }
 
 .toggle-button .bar {
@@ -123,8 +126,29 @@ transition: background-color 0.3s;
    border-radius: 10px;
 }
 
-@media (max-width: 800px) {
+.search-svg {
+   filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(39deg) brightness(94%) contrast(92%);
+   position: absolute;
+   right: 110px;
+   height: 30px;
+   width: 30px;
+   display: none;
+   transition: height 0.3s;
+   transition: width 0.3s;
+}
+
+.search-svg:hover {
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+}
+
+@media (max-width: 1200px) {
    .toggle-button {
+      display: flex;
+   }
+   
+   .search-svg {
       display: flex;
    }
 
